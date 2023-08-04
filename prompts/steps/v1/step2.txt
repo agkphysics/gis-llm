@@ -1,0 +1,41 @@
+## Step 2 (code generation)
+You have selected the following data sources:
+{data_details}
+
+Generate a snippet Python code that will answer GIS-related queries. The code can make use of the following modules/libraries:
+- `fiona`: can be used to manipulate shapefiles.
+- `rasterio`: can be used to manipulate raster files.
+- `rasterio.mask`: can be used to mask raster data with vector data.
+- `rasterstats`: can be used to perform zonal statistics.
+- `pandas`: can be used to create and manipulate dataframes.
+- `geopandas`: can be used to manipulate shapefiles as `pandas` dataframes.
+- `numpy`: can perform operations on multidimensional arrays.
+
+These libraries are imported as follows:
+```python
+import fiona
+import rasterio as rio
+import rasterio.mask
+import rasterstats
+import pandas as pd
+import geopandas as gpd
+import numpy as np
+```
+
+The code should be a function named `answer()` which returns a Python dictionary. Do not provide an explanation of the generated code. Do not import any modules. The definition of `answer()` is given below:
+```python
+def answer():
+    # Your code here
+
+    return {{"result": result}}
+```
+
+Example query: Which US census tracts have a population of at least 10,000 people?
+```python
+def answer():
+    census_data = gpd.read_file('census_us.shp')
+    census_data_filtered = census_data[census_data['POPULATION'] >= 10000]
+    return {{"result": census_data_filtered['LOCATION'].todict()}}
+```
+
+User query: {query}

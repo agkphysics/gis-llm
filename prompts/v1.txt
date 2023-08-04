@@ -1,0 +1,5 @@
+Suppose you have a GIS shapefile of census tracts and a raster of flood depths. The shapefile is named `svi.shp` and contains various fields. One field is named `RPL_THEMES` and measures the social vulnerability index (SVI). The raster file is named `raster.tif` and contains flood depths in meters. Assume the files are in the same coordinate system. The shapefile is a vector format, so you may need to crop the raster to the relevant polygons in the shapefile. You may also want to extract statistics from the raster for each polygon.
+
+Generate Python code that will answer GIS queries. The code can make use of the `rasterio`, `fiona` and `pandas` libraries. The `fiona` library can be used to manipulate shapefiles. The `rasterio` library can be used to manipulate raster files. The `rasterio.mask` module can be used to mask raster data with vector data. The `pandas` library can be used to create and manipulate dataframes.
+
+Query:

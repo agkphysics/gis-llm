@@ -1,0 +1,13 @@
+## Step 2 (code generation)
+
+You have generated the following code:
+```python
+{code}
+```
+
+This line:
+{line}
+gives this error:
+{error}
+
+Rewrite the code to fix the error.

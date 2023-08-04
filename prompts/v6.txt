@@ -1,0 +1,14 @@
+You have a GIS shapefile of census tracts and a raster of flood depths. The shapefile is named `svi.shp` and contains vector polygons withg corresponding data fields. One field is named `RPL_THEMES` and measures the social vulnerability index (SVI). The raster file is named `raster.tif` and contains flood depths in meters. Each pixel in the raster file corresponds to a small region of the map, but there is no direct correspondence between the raster data and the vector data. Assume the raster and vector data are in the same coordinate system. You may need to crop the raster data to the relevant polygons in the shapefile. You may also need to extract statistics from the raster for each polygon.
+
+Generate a snippet Python code that will answer GIS-related queries. The code can make use of the following modules, which will already be imported as is (you do not need to import any modules):
+- `fiona`: can be used to manipulate shapefiles.
+- `rasterio`: can be used to manipulate raster files.
+- `rasterio.mask`: can be used to mask raster data with vector data.
+- `pandas`: can be used to create and manipulate dataframes.
+- `geopandas`: can be used to manipulate shapefiles as `pandas` dataframes.
+- `numpy`: can perform operations on multidimensional arrays.
+
+Write a function which returns an answer to the given query, subject to the above constraints. The function takes no arguments and should return an answer as a Python dictionary. The function should be named `answer()`. Do not provide an explanation of the generated code. Do not put comments in the code. Do not import any modules. Do not write any functions or methods.
+
+
+Query:

@@ -1,0 +1,22 @@
+[
+    {
+        "description": "Social vulnerability data for each census tract.",
+        "filename": "svi.shp",
+        "details": "Social vulnerability data for Florida, as a vector shapefile with one polygon per census tract. The field `RPL_THEMES` contains the social vulnerability score for each tract. The field `LOCATION` contains the census tract information."
+    },
+    {
+        "description": "Population density maps at a resolution of 1 pixel per 30 feet.",
+        "filename": "pop_density.tif",
+        "details": "Population density data for Florida, as a raster file with a resolution of 1 pixel per 30 feet. The file has one raster band, where each pixel contains the population density in people per square mile."
+    },
+    {
+        "description": "Flood depth data at a resolution of 1 pixel per 30 feet.",
+        "filename": "flood_depth.tif",
+        "details": "Flood depth data for Florida, as a raster file with a resolution of 1 pixel per 30 feet. The file has one raster band, where each pixel contains the flood depth in feet."
+    },
+    {
+        "description": "Road maps containing road segments and associated metadata.",
+        "filename": "roads.shp",
+        "details": "Road data for Florida, as a vector shapefile with one line segment per road. The field `ROAD_TYPE` contains the type of road, and the field `ROAD_NAME` contains the name of the road."
+    }
+]

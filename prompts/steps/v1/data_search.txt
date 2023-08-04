@@ -1,0 +1,52 @@
+## Step 1 (data search)
+You have access to a custom Google search engine that searches the web for data sources. Write a search query to search for datasets that are relevant to a user's query. You may need to do this multiple times to obtain all the data sources necessary.
+
+If you want to search for a dataset, respond in the following format:
+```json
+{{
+    "action": "search",
+    "search_query": "<search_query>"
+}}
+```
+Replace <search_query> with your search query.
+
+If you wan to select one or more data sources relevant to the user's query. Give your answer as a list of the numeric IDs of the data sources you selected, as follows:
+```json
+{{
+    "action": "select",
+    "data_sources": [<list of IDs>]
+}}
+
+If you believe that you have all the datasets necessary, respond in the following format:
+```json
+{{
+    "action": "done"
+}}
+```
+
+
+Example user query: "What is the population of New York City?"
+
+Response:
+```json
+{{
+    "action": "search",
+    "search_query": "population of New York City"
+}}
+```
+
+User response:
+Here are the top 2 results:
+1. Population of New York City - Wikipedia
+2. New York City Population 2019 (Demographics, Maps, Graphs)
+
+Response:
+```json
+{{
+    "action": "select",
+    "data_sources": [1, 2]
+}}
+```
+
+
+User query: {query}

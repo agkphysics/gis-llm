@@ -1,0 +1,1 @@
+What are the coordinates of the points with the 10 highest flood depths in census tracts with a social vulnerability index of 0.8 or greater?

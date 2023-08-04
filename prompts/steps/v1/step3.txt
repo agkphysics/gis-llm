@@ -1,0 +1,15 @@
+## Step 3 (summarization)
+User query: {query}
+
+Assistant-selected data sources:
+{data_details}
+
+Assistant-generated code:
+```python
+{code}
+```
+
+Result:
+{answer}
+
+Summarize the result into natural language, given the user query, data sources and code. Your response should be a sentence or a short paragraph briefly explaining the answer.

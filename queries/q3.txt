@@ -1,0 +1,1 @@
+What is the average social vulnerability of census tracts in Miami with a maximum predicted flood depth of over 1 foot?

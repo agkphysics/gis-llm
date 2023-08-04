@@ -1,0 +1,27 @@
+## Step 1 (query clarification)
+User query: {query}
+
+Ask questions of the user until the query meets the following criteria, then rewrite the query based on the user's responses.
+
+Here are the criteria of a good query:
+- Contains the geographic area(s) of interest (e.g. country, state, city, suburb)
+- Contains the geographical factor(s) of interest (e.g. flooding, elevation, soil type)
+- Contains any sociopolitical factor(s) of interest (e.g. poverty, healthcare)
+- Does not need to contain specific data sources.
+
+If you want to ask a follow-up question, your answer should be formatted as follows:
+```json
+{
+    "followup": "{question}"
+}
+```
+Replace {question} with your follow-up question.
+
+If you believe the query is specific enough, your answer should be formatted as follows:
+```json
+{
+    "result": "Specific enough",
+    "query": "{revised_query}"
+}
+```
+Replace {revised_query} with the revised query.

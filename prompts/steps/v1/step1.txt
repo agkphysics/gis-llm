@@ -1,0 +1,15 @@
+## Step 1 (data selection)
+You have access to the following data sources:
+{data_description}
+Each data source is available either for the whole US or for an individual state.
+
+Select one or more data sources relevant to the user's query. Give your answer as a list of the numeric IDs of the data sources you selected. Also specify whether you want the overall US data or state-specific data using the state code. For example, if you want population density and flood depth for Texas, your answer would be
+```json
+{{
+    "data_sources": [2, 3],
+    "area": "TX"
+}}
+```
+Show working.
+
+User query: {query}
